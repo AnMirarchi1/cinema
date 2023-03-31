@@ -39,9 +39,51 @@
     <div>
         <!-- Contenido general de la página principal -->
         <h1 class="titulo">Compras Online</h1>
-        
-
     </div>
+    
+    
+    <div class="container">
+		<div class="cont-products">
+			<div class="producto">
+				<h2>Dungeons&Dragons</h2>
+				<img src="https://cinemacac.netlify.app/img/calabozos.jpg" alt="Calabozos y Dragones">
+				<h2>$500</h2>
+				<button onClick="addItem(event)" class="add-button" value="0" id="Dungeons&Dragons">Add to cart</button>
+				
+			</div>
+			<div class="producto">
+				<h2>La Extorsión</h2>
+				<img src="https://cinemacac.netlify.app/img/laextorsion.jpg" alt="La Extorsión">
+				<h2>$500</h2>
+				<button onClick="addItem(event)" class="add-button" value="1" id="La Extorsión">Add to cart</button>
+				
+			</div>
+			<div class="producto">
+				<h2>65</h2>
+				<img src="https://cinemacac.netlify.app/img/65.jpg" alt="65">
+				<h2>$500</h2>
+				<button onClick="addItem(event)" class="add-button" value="2" id="65">Add to cart</button>
+			</div>
+
+		</div>
+		<div class="hidden" id="precio-final">
+			<h2>Precio final:</h2>
+		</div>		
+		<div id="cart" class="cont-cart">
+			<h1>Carrito de compras</h1>
+			<p id="alert" class="carrito-alert">aun no hay items en el carrito de compras</p>
+			<div id="cart-columns">
+				<ul id="cart-items"></ul>
+				<ul id="cart-prices"></ul>
+			</div>
+			<div class="total-cont">
+				<h3 id="total">TOTAL:</h3>
+			</div>
+			<button class="comprar" onClick="pressBuy()">Comprar</button>
+		</div>
+	</div>
+	<script src="js/compras.js"></script>
+    
 
     <!-- Pie de Página -->
     <footer>
